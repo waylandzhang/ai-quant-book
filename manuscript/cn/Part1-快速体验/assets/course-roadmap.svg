@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 320">
+  <defs>
+    <style>
+      .label { font: 500 10px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #666; text-anchor: start; letter-spacing: 0.3px; }
+      .box-text { font: 600 13px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #1a1a1a; text-anchor: start; }
+      .part-num { font: 700 12px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #fff; text-anchor: middle; }
+      .title { font: 600 12px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #1a1a1a; letter-spacing: 1px; }
+      .current { font: 600 10px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #3b82f6; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ccc"/>
+    </marker>
+  </defs>
+
+  <!-- White background -->
+  <rect width="650" height="320" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="325" y="25" class="title" text-anchor="middle">COURSE ROADMAP</text>
+
+  <!-- Part 1 - Current (highlighted) -->
+  <circle cx="50" cy="70" r="18" fill="#3b82f6"/>
+  <text x="50" y="76" class="part-num">1</text>
+  <rect x="80" y="50" width="520" height="40" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="95" y="72" class="box-text">快速体验</text>
+  <text x="250" y="72" class="label">量化全景图、多智能体架构直觉</text>
+  <text x="540" y="72" class="current">← YOU ARE HERE</text>
+
+  <!-- Arrow -->
+  <line x1="50" y1="95" x2="50" y2="115" stroke="#ccc" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Part 2 -->
+  <circle cx="50" cy="135" r="18" fill="#10b981"/>
+  <text x="50" y="141" class="part-num">2</text>
+  <rect x="80" y="115" width="520" height="40" fill="#d1fae5" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="95" y="137" class="box-text">量化基础</text>
+  <text x="250" y="137" class="label">市场、数学、指标、策略、数据、回测</text>
+
+  <!-- Arrow -->
+  <line x1="50" y1="160" x2="50" y2="180" stroke="#ccc" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Part 3 -->
+  <circle cx="50" cy="200" r="18" fill="#f59e0b"/>
+  <text x="50" y="206" class="part-num">3</text>
+  <rect x="80" y="180" width="520" height="40" fill="#fef3c7" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="95" y="202" class="box-text">机器学习</text>
+  <text x="250" y="202" class="label">监督学习、从模型到 Agent</text>
+
+  <!-- Arrow -->
+  <line x1="50" y1="225" x2="50" y2="245" stroke="#ccc" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Part 4 -->
+  <circle cx="50" cy="265" r="18" fill="#ec4899"/>
+  <text x="50" y="271" class="part-num">4</text>
+  <rect x="80" y="245" width="250" height="40" fill="#fce7f3" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="95" y="267" class="box-text">多智能体</text>
+  <text x="200" y="267" class="label">架构、Regime、风控</text>
+
+  <!-- Part 5 -->
+  <circle cx="380" cy="265" r="18" fill="#8b5cf6"/>
+  <text x="380" y="271" class="part-num">5</text>
+  <rect x="410" y="245" width="190" height="40" fill="#ede9fe" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="425" y="267" class="box-text">生产实战</text>
+  <text x="505" y="267" class="label">执行、运维</text>
+
+  <!-- Arrow between 4 and 5 -->
+  <line x1="335" y1="265" x2="355" y2="265" stroke="#ccc" stroke-width="1.5" marker-end="url(#arrow)"/>
+</svg>

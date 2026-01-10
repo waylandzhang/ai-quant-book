@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350">
+  <defs>
+    <style>
+      .label { font: 500 9px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #666; text-anchor: middle; letter-spacing: 0.3px; }
+      .box-text { font: 600 12px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #1a1a1a; text-anchor: middle; }
+      .box-text-small { font: 500 10px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #1a1a1a; text-anchor: middle; }
+      .title { font: 600 12px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #1a1a1a; letter-spacing: 1px; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- White background -->
+  <rect width="700" height="350" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="350" y="25" class="title" text-anchor="middle">COMPLETE MULTI-AGENT TRADING SYSTEM</text>
+
+  <!-- Outer frame -->
+  <rect x="30" y="45" width="640" height="280" fill="none" stroke="#e5e7eb" stroke-width="1.5" rx="4"/>
+
+  <!-- Row 1: Data → Research → Signal -->
+  <!-- Data Agent - Blue -->
+  <rect x="60" y="70" width="130" height="65" fill="#dbeafe" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="125" y="100" class="box-text">Data Agent</text>
+  <text x="125" y="118" class="label">数据获取</text>
+
+  <line x1="190" y1="102" x2="230" y2="102" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Research Agent - Green -->
+  <rect x="245" y="70" width="130" height="65" fill="#d1fae5" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="310" y="100" class="box-text">Research Agent</text>
+  <text x="310" y="118" class="label">市场分析</text>
+
+  <line x1="375" y1="102" x2="415" y2="102" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Signal Agent - Teal -->
+  <rect x="430" y="70" width="130" height="65" fill="#99f6e4" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="495" y="100" class="box-text">Signal Agent</text>
+  <text x="495" y="118" class="label">信号生成</text>
+
+  <!-- Arrow down from Signal -->
+  <line x1="495" y1="135" x2="495" y2="175" stroke="#666" stroke-width="1.5"/>
+  <line x1="495" y1="175" x2="435" y2="175" stroke="#666" stroke-width="1.5"/>
+  <line x1="435" y1="175" x2="435" y2="195" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Row 2: Meta → Risk → Execution -->
+  <!-- Meta Agent - Cyan -->
+  <rect x="60" y="205" width="130" height="65" fill="#a5f3fc" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="125" y="235" class="box-text">Meta Agent</text>
+  <text x="125" y="253" class="label">状态识别</text>
+
+  <line x1="190" y1="237" x2="230" y2="237" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Risk Agent - Yellow -->
+  <rect x="245" y="205" width="130" height="65" fill="#fde047" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="310" y="235" class="box-text">Risk Agent</text>
+  <text x="310" y="253" class="label">风控审核</text>
+
+  <line x1="375" y1="237" x2="415" y2="237" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Execution Agent - Pink -->
+  <rect x="430" y="205" width="130" height="65" fill="#fce7f3" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="495" y="235" class="box-text">Execution Agent</text>
+  <text x="495" y="253" class="label">订单执行</text>
+
+  <!-- Output arrow -->
+  <line x1="560" y1="237" x2="600" y2="237" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="630" y="242" class="label">MARKET</text>
+
+  <!-- Veto indicator on Risk -->
+  <rect x="355" y="280" width="60" height="22" fill="#ef4444" stroke="#1a1a1a" stroke-width="1" rx="2"/>
+  <text x="385" y="295" class="box-text-small" fill="#fff">VETO</text>
+</svg>

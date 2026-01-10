@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 220">
+  <defs>
+    <style>
+      .label { font: 500 10px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #666; text-anchor: middle; letter-spacing: 0.3px; }
+      .box-text { font: 600 11px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #1a1a1a; text-anchor: middle; }
+      .title { font: 600 12px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #1a1a1a; letter-spacing: 1px; }
+      .time-label { font: 500 9px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #666; text-anchor: middle; }
+      .axis-label { font: 500 9px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #999; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ccc"/>
+    </marker>
+
+    <!-- Grid pattern -->
+    <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#e5e7eb" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- White background -->
+  <rect width="700" height="220" fill="#fff"/>
+
+  <!-- Grid background (contained area) -->
+  <rect x="40" y="45" width="630" height="130" fill="url(#grid)"/>
+  <rect x="40" y="45" width="630" height="130" fill="none" stroke="#d1d5db" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="350" y="25" class="title" text-anchor="middle">TRADING FREQUENCY SPECTRUM</text>
+
+  <!-- Y-axis labels (conceptual frequency/activity) -->
+  <text x="25" y="60" class="axis-label" text-anchor="end">HIGH</text>
+  <text x="25" y="110" class="axis-label" text-anchor="end">MED</text>
+  <text x="25" y="160" class="axis-label" text-anchor="end">LOW</text>
+
+  <!-- Timeline arrow -->
+  <line x1="40" y1="175" x2="660" y2="175" stroke="#ccc" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Strategy boxes positioned on grid -->
+  <!-- HFT - Pink (highest frequency, top-left) -->
+  <rect x="55" y="55" width="90" height="50" fill="#f9a8d4" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="100" y="80" class="box-text">高频做市</text>
+  <text x="100" y="95" class="label">HFT</text>
+
+  <!-- Stat Arb - Pink light -->
+  <rect x="160" y="65" width="90" height="50" fill="#fbcfe8" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="205" y="90" class="box-text">统计套利</text>
+  <text x="205" y="105" class="label">STAT ARB</text>
+
+  <!-- Trend/MeanRev - Cyan (highlighted, this book's focus) -->
+  <rect x="268" y="75" width="160" height="65" fill="#67e8f9" stroke="#3b82f6" stroke-width="3"/>
+  <text x="348" y="103" class="box-text">趋势/均值回归</text>
+  <text x="348" y="120" class="label">TREND / MEAN REV</text>
+  <!-- Focus indicator with dotted line -->
+  <line x1="348" y1="140" x2="348" y2="158" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="348" y="168" class="label" fill="#3b82f6">THIS BOOK</text>
+
+  <!-- Factor - Yellow -->
+  <rect x="448" y="90" width="90" height="50" fill="#fde047" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="493" y="115" class="box-text">因子投资</text>
+  <text x="493" y="130" class="label">FACTOR</text>
+
+  <!-- Value - Yellow light (lowest frequency, bottom-right) -->
+  <rect x="558" y="105" width="90" height="50" fill="#fef08a" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="603" y="130" class="box-text">价值投资</text>
+  <text x="603" y="145" class="label">VALUE</text>
+
+  <!-- Time labels below axis -->
+  <text x="100" y="192" class="time-label">微秒</text>
+  <text x="100" y="203" class="time-label" fill="#999">μs</text>
+
+  <text x="205" y="192" class="time-label">分钟</text>
+  <text x="205" y="203" class="time-label" fill="#999">min</text>
+
+  <text x="348" y="192" class="time-label">天-周</text>
+  <text x="348" y="203" class="time-label" fill="#999">day-week</text>
+
+  <text x="493" y="192" class="time-label">月</text>
+  <text x="493" y="203" class="time-label" fill="#999">month</text>
+
+  <text x="603" y="192" class="time-label">年</text>
+  <text x="603" y="203" class="time-label" fill="#999">year</text>
+
+  <!-- Holding period label -->
+  <text x="350" y="215" class="label">HOLDING PERIOD →</text>
+</svg>

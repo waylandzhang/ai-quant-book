@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420">
+  <defs>
+    <style>
+      .label { font: 500 10px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #666; text-anchor: middle; letter-spacing: 0.5px; }
+      .box-text { font: 600 13px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #1a1a1a; text-anchor: middle; }
+      .box-text-small { font: 500 11px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #1a1a1a; text-anchor: middle; }
+      .title { font: 600 12px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #1a1a1a; letter-spacing: 1px; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+
+    <!-- Hatching patterns for differentiation -->
+    <!-- Dots pattern for Meta Agent (controller) -->
+    <pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="1.2" fill="#0891b2" opacity="0.4"/>
+    </pattern>
+
+    <!-- Diagonal lines for Trend Agent -->
+    <pattern id="diagonal-right" width="6" height="6" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="6" x2="6" y2="0" stroke="#0d9488" stroke-width="0.8" opacity="0.5"/>
+    </pattern>
+
+    <!-- Horizontal lines for Mean Revert Agent -->
+    <pattern id="horizontal" width="6" height="6" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="3" x2="6" y2="3" stroke="#0891b2" stroke-width="0.8" opacity="0.5"/>
+    </pattern>
+
+    <!-- Crosshatch for Crisis Agent -->
+    <pattern id="crosshatch" width="6" height="6" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="6" y2="6" stroke="#db2777" stroke-width="0.6" opacity="0.4"/>
+      <line x1="6" y1="0" x2="0" y2="6" stroke="#db2777" stroke-width="0.6" opacity="0.4"/>
+    </pattern>
+
+    <!-- Vertical lines for Risk Agent -->
+    <pattern id="vertical" width="5" height="5" patternUnits="userSpaceOnUse">
+      <line x1="2.5" y1="0" x2="2.5" y2="5" stroke="#ca8a04" stroke-width="0.8" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- White background -->
+  <rect width="600" height="420" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="300" y="30" class="title" text-anchor="middle">MULTI-AGENT ARCHITECTURE</text>
+
+  <!-- Meta Agent - Top (with dots pattern) -->
+  <rect x="150" y="50" width="300" height="60" fill="#a5f3fc" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="150" y="50" width="300" height="60" fill="url(#dots)"/>
+  <text x="300" y="80" class="box-text">Meta-Agent</text>
+  <text x="300" y="97" class="label">REGIME DETECTION + ROUTING</text>
+
+  <!-- Arrow down from Meta -->
+  <line x1="300" y1="110" x2="300" y2="140" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Three Expert Agents with different hatching -->
+  <!-- Trend Agent - Teal with diagonal lines -->
+  <rect x="50" y="155" width="140" height="70" fill="#5eead4" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="50" y="155" width="140" height="70" fill="url(#diagonal-right)"/>
+  <text x="120" y="185" class="box-text">Trend Agent</text>
+  <text x="120" y="205" class="label">趋势专家</text>
+
+  <!-- Mean Revert Agent - Cyan with horizontal lines -->
+  <rect x="230" y="155" width="140" height="70" fill="#67e8f9" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="230" y="155" width="140" height="70" fill="url(#horizontal)"/>
+  <text x="300" y="185" class="box-text">Mean Revert</text>
+  <text x="300" y="205" class="label">震荡专家</text>
+
+  <!-- Crisis Agent - Pink with crosshatch -->
+  <rect x="410" y="155" width="140" height="70" fill="#f9a8d4" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="410" y="155" width="140" height="70" fill="url(#crosshatch)"/>
+  <text x="480" y="185" class="box-text">Crisis Agent</text>
+  <text x="480" y="205" class="label">危机专家</text>
+
+  <!-- Branching arrows from Meta to Experts -->
+  <line x1="200" y1="140" x2="120" y2="155" stroke="#666" stroke-width="1.5"/>
+  <line x1="300" y1="140" x2="300" y2="155" stroke="#666" stroke-width="1.5"/>
+  <line x1="400" y1="140" x2="480" y2="155" stroke="#666" stroke-width="1.5"/>
+
+  <!-- Converging arrows from Experts -->
+  <line x1="120" y1="225" x2="120" y2="260" stroke="#666" stroke-width="1.5"/>
+  <line x1="300" y1="225" x2="300" y2="260" stroke="#666" stroke-width="1.5"/>
+  <line x1="480" y1="225" x2="480" y2="260" stroke="#666" stroke-width="1.5"/>
+
+  <line x1="120" y1="260" x2="300" y2="290" stroke="#666" stroke-width="1.5"/>
+  <line x1="300" y1="260" x2="300" y2="290" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="480" y1="260" x2="300" y2="290" stroke="#666" stroke-width="1.5"/>
+
+  <!-- Risk Agent - Yellow with vertical lines (emphasis) -->
+  <rect x="175" y="300" width="250" height="70" fill="#fde047" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="175" y="300" width="250" height="70" fill="url(#vertical)"/>
+  <text x="300" y="335" class="box-text">Risk Agent</text>
+  <text x="300" y="355" class="label">一票否决权 / VETO POWER</text>
+
+  <!-- Veto indicator -->
+  <rect x="440" y="320" width="80" height="30" fill="#ef4444" stroke="#1a1a1a" stroke-width="1.5" rx="2"/>
+  <text x="480" y="340" class="box-text-small" fill="#fff">VETO</text>
+
+  <!-- Legend for patterns -->
+  <g transform="translate(20, 385)">
+    <rect x="0" y="0" width="12" height="12" fill="#5eead4" stroke="#1a1a1a" stroke-width="0.5"/>
+    <rect x="0" y="0" width="12" height="12" fill="url(#diagonal-right)"/>
+    <text x="18" y="10" class="label" text-anchor="start">TREND</text>
+
+    <rect x="70" y="0" width="12" height="12" fill="#67e8f9" stroke="#1a1a1a" stroke-width="0.5"/>
+    <rect x="70" y="0" width="12" height="12" fill="url(#horizontal)"/>
+    <text x="88" y="10" class="label" text-anchor="start">REVERT</text>
+
+    <rect x="150" y="0" width="12" height="12" fill="#f9a8d4" stroke="#1a1a1a" stroke-width="0.5"/>
+    <rect x="150" y="0" width="12" height="12" fill="url(#crosshatch)"/>
+    <text x="168" y="10" class="label" text-anchor="start">CRISIS</text>
+  </g>
+</svg>

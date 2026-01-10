@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420">
+  <defs>
+    <style>
+      .label { font: 500 11px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #1a1a1a; text-anchor: middle; letter-spacing: 0.5px; }
+      .label-small { font: 500 10px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #666; text-anchor: middle; letter-spacing: 0.5px; }
+      .box-text { font: 600 13px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #1a1a1a; text-anchor: middle; }
+      .axis-text { font: 500 11px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #666; }
+      .title { font: 600 12px 'SF Mono', 'Menlo', 'Monaco', monospace; fill: #1a1a1a; letter-spacing: 1px; }
+    </style>
+  </defs>
+
+  <!-- White background -->
+  <rect width="680" height="420" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="400" y="30" class="title" text-anchor="middle">STRATEGY MATRIX</text>
+
+  <!-- Y-axis label -->
+  <text x="35" y="215" class="axis-text" text-anchor="middle" transform="rotate(-90, 35, 215)">FREQUENCY</text>
+
+  <!-- Y-axis indicators -->
+  <text x="70" y="105" class="label-small">HIGH</text>
+  <text x="70" y="215" class="label-small">MED</text>
+  <text x="70" y="325" class="label-small">LOW</text>
+
+  <!-- X-axis label -->
+  <text x="400" y="400" class="axis-text" text-anchor="middle">HOLDING PERIOD</text>
+
+  <!-- X-axis indicators -->
+  <text x="190" y="375" class="label-small">SHORT</text>
+  <text x="610" y="375" class="label-small">LONG</text>
+
+  <!-- Arrow for X-axis -->
+  <line x1="120" y1="360" x2="650" y2="360" stroke="#ccc" stroke-width="1"/>
+  <polygon points="650,356 660,360 650,364" fill="#ccc"/>
+
+  <!-- Arrow for Y-axis -->
+  <line x1="95" y1="350" x2="95" y2="55" stroke="#ccc" stroke-width="1"/>
+  <polygon points="91,55 95,45 99,55" fill="#ccc"/>
+
+  <!-- Row 1: High Frequency -->
+  <!-- HFT Market Making - Pink -->
+  <rect x="120" y="65" width="160" height="70" fill="#f9a8d4" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="200" y="105" class="box-text">高频做市</text>
+  <text x="200" y="122" class="label-small">HFT MAKING</text>
+
+  <!-- Statistical Arbitrage - Pink lighter -->
+  <rect x="510" y="65" width="160" height="70" fill="#fbcfe8" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="590" y="105" class="box-text">统计套利</text>
+  <text x="590" y="122" class="label-small">STAT ARB</text>
+
+  <!-- Row 2: Medium Frequency -->
+  <!-- Intraday Momentum - Cyan -->
+  <rect x="120" y="175" width="160" height="70" fill="#67e8f9" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="200" y="215" class="box-text">日内动量</text>
+  <text x="200" y="232" class="label-small">INTRADAY</text>
+
+  <!-- Trend Following - Teal -->
+  <rect x="510" y="175" width="160" height="70" fill="#5eead4" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="590" y="215" class="box-text">趋势跟随</text>
+  <text x="590" y="232" class="label-small">TREND</text>
+
+  <!-- Row 3: Low Frequency -->
+  <!-- Event Driven - Yellow -->
+  <rect x="120" y="285" width="160" height="70" fill="#fde047" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="200" y="325" class="box-text">事件驱动</text>
+  <text x="200" y="342" class="label-small">EVENT</text>
+
+  <!-- Value Factor - Yellow lighter -->
+  <rect x="510" y="285" width="160" height="70" fill="#fef08a" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="590" y="325" class="box-text">价值因子</text>
+  <text x="590" y="342" class="label-small">VALUE</text>
+
+  <!-- Focus bracket - dotted line -->
+  <rect x="300" y="168" width="378" height="84" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="6,3" rx="2"/>
+
+  <!-- Focus label with arrow -->
+  <line x1="489" y1="260" x2="489" y2="275" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="489" y="290" class="label" fill="#3b82f6">THIS BOOK</text>
+</svg>
