@@ -36,7 +36,7 @@
 
 ### 1.2 Two Sigma Investments
 
-**AUM**: Approximately **$60-110 billion** (varies by measurement, core net assets ~$60B+)
+**AUM**: Approximately **$60-70+ billion** (as of late 2025, rose to record highs above $70B)
 
 **Core Characteristics**:
 - Uses machine learning and big data analysis
@@ -61,8 +61,8 @@
 **Founder**: Ken Griffin
 
 **AUM**:
-- Institutional Net AUM: Approximately **$72 billion** (as of early 2025)
-- Gross AUM: Approximately **$400 billion** (including Citadel Securities trading positions)
+- Institutional Net AUM: Approximately **$67 billion** (as of late 2025, after returning ~$5B to investors)
+- Gross AUM: Approximately **$446 billion** (per Form ADV, includes derivatives notional exposure)
 
 **Core Characteristics**:
 - Multi-strategy quant + market maker (Citadel Securities)
@@ -86,8 +86,8 @@
 
 **Positioning**: Proprietary Trading Firm
 
-**Scale (Own Capital)**: Total assets approximately **$140 billion** (2024 financial disclosure)
-- Note: Jane Street doesn't manage external capital; their securities holdings are extremely high.
+**Scale (Own Capital)**: Securities holdings approximately **$86 billion** (Q4 2025 13F filing)
+- Note: Jane Street doesn't manage external capital; this reflects their securities market value per regulatory filings.
 - High/medium-frequency trading
 - ETF arbitrage and options pricing experts
 - Global liquidity provider
@@ -111,11 +111,12 @@
 
 ### 1.5 Other Notable Quantitative Institutions
 
-| Institution | Characteristics | Net AUM (as of early 2025) |
+| Institution | Characteristics | Net AUM (as of late 2025) |
 |-------------|-----------------|---------------------------|
+| **Bridgewater Associates** | World's largest hedge fund, macro strategies | ~$92 billion |
 | **Millennium Management** | King of multi-strategy, extreme risk control | ~$70 billion |
+| **D.E. Shaw** | Quant pioneer, Bezos's former employer | ~$85 billion |
 | **Balyasny (BAM)** | Multi-strategy, strong in commodities and quant | ~$21 billion |
-| **D.E. Shaw** | Quant pioneer, Bezos's former employer | ~$60 billion |
 | **Hudson River Trading (HRT)** | Top HFT player | (Own capital) |
 | **Point72 (Quant)** | Steve Cohen, multi-strategy | ~$35 billion |
 

@@ -11,15 +11,16 @@
 **Long-Term Capital Management (LTCM)** was a hedge fund founded by Nobel Prize-winning economists Myron Scholes and Robert Merton.
 
 - **Strategy**: Fixed income arbitrage, exploiting small price deviations in bonds
-- **Leverage**: 25-30x
-- **AUM**: $4.7 billion, but exposure reached $1.25 trillion
+- **Leverage**: Over 25x on securities, derivatives leverage >250:1
+- **AUM**: Started with $4.7 billion; by collapse, capital had fallen below $1 billion
+- **Exposure**: Borrowed ~$125 billion in securities, held $1.25 trillion in derivatives notional value
 
 ### Collapse Process
 
 1. **August 1998**: Russian debt default triggers global panic
 2. **Liquidity crisis**: Everyone selling risk assets simultaneously
 3. **Correlation breakdown**: Historically uncorrelated assets suddenly became highly correlated
-4. **Blowup**: Lost $4.6 billion in one month
+4. **Blowup**: Lost **$4.6 billion** over four months, with capital dropping to under $1 billion
 
 ### Lessons
 
@@ -45,15 +46,16 @@ Your model performs well in normal markets ≠ It will survive a crisis
 **Knight Capital** was one of the largest market makers in the US.
 
 - **Date**: August 1, 2012
-- **Duration**: 45 minutes
+- **Duration**: 45 minutes (within first hour of market open)
 - **Loss**: $440 million (40% of company's net worth)
+- **Trade Volume**: Bought approximately **$7 billion** worth of ~150 stocks
 
 ### Collapse Process
 
-1. **Code deployment error**: New code activated old test code
-2. **Runaway trading**: System traded at wrong prices in massive quantities
-3. **No detection**: Unable to stop for 45 minutes
-4. **Result**: Company forced to sell, nearly bankrupt
+1. **Code deployment error**: New code activated old test code that should have been deleted
+2. **Runaway trading**: System executed millions of erroneous trades in ~150 stocks
+3. **No detection**: Unable to stop for 45 minutes while accumulating massive unwanted positions
+4. **Result**: Company forced to sell, received emergency $400M investment to avoid bankruptcy
 
 ### Technical Details
 
@@ -191,7 +193,97 @@ If your strategy is too successful, many others may be using the same strategy
 
 ---
 
-## 6. China Quant Quake (February 2024)
+## 6. WTI Oil Futures Go Negative (April 2020)
+
+### Event Overview
+
+**April 20, 2020**, WTI crude oil May futures contract traded at **negative prices** for the first time in history.
+
+- **Low Price**: -$37.63 per barrel
+- **Cause**: COVID-19 demand collapse + storage capacity crisis
+- **Victims**: USO ETF investors, retail traders, some commodity funds
+
+### Collapse Process
+
+1. **COVID-19 lockdowns**: Global oil demand collapsed by 30%+
+2. **Storage full**: Cushing, Oklahoma storage nearing capacity
+3. **Contract expiry**: May contract approaching delivery date
+4. **Panic selling**: Traders paid to get rid of contracts they couldn't take delivery on
+5. **ETF structure issues**: USO forced to roll contracts at worst possible times
+
+### Key Factors
+
+- Physical delivery mechanism of futures contracts
+- Storage constraints creating negative carry
+- ETF structure mismatch with underlying dynamics
+- Retail investors not understanding futures mechanics
+
+### Lessons
+
+| Problem | Lesson |
+|---------|--------|
+| Contract mechanics | Understand delivery and rollover mechanics |
+| Physical constraints | Financial instruments linked to physical goods have real-world limits |
+| ETF structure | ETFs don't always track underlying perfectly |
+| Extreme scenarios | "Price can't go negative" is a dangerous assumption |
+
+### Quantitative Insight
+
+```
+Never assume prices have a floor;
+when storage is full, sellers will pay you to take delivery.
+```
+
+---
+
+## 7. GameStop Short Squeeze (January 2021)
+
+### Event Overview
+
+**GameStop (GME)** stock experienced a historic short squeeze driven by retail traders from r/WallStreetBets.
+
+- **Price Move**: From ~$20 to $483 intraday peak (January 28, 2021)
+- **Duration**: About 2 weeks of extreme volatility
+- **Melvin Capital Loss**: ~$6.8 billion (53% of assets)
+- **Total Short Seller Losses**: Estimated $12+ billion
+
+### Collapse Process
+
+1. **High short interest**: GME had 140%+ of float sold short
+2. **Reddit coordination**: r/WallStreetBets community identified the squeeze opportunity
+3. **Gamma squeeze**: Massive call option buying forced market makers to buy shares
+4. **Short squeeze**: Shorts forced to cover, pushing prices higher
+5. **Trading restrictions**: Robinhood and others restricted buying, causing controversy
+6. **Aftermath**: Congressional hearings, regulatory scrutiny
+
+### Key Factors
+
+- Unprecedented retail coordination via social media
+- Short interest exceeding 100% of float
+- Options market gamma dynamics
+- Clearing house margin requirements
+- Payment for Order Flow (PFOF) scrutiny
+
+### Lessons
+
+| Problem | Lesson |
+|---------|--------|
+| Crowded shorts | >100% short interest creates infinite squeeze risk |
+| Social media | Retail coordination can move markets |
+| Options dynamics | Gamma exposure can amplify moves exponentially |
+| Broker risk | Clearing requirements can force trading halts |
+| Asymmetric risk | Shorts have unlimited loss potential |
+
+### Quantitative Insight
+
+```
+When everyone is on the same side of a trade,
+the exit door becomes very small.
+```
+
+---
+
+## 8. China Quant Quake (February 2024)
 
 ### Event Overview
 
@@ -262,7 +354,7 @@ no one escapes when the pond dries up.
 
 ---
 
-## 7. Renaissance Tariff Shock (April 2025)
+## 9. Renaissance Tariff Shock (April 2025)
 
 ### Event Overview
 
@@ -325,23 +417,23 @@ but politicians' words are not in the training data.
 
 ---
 
-## 8. Common Lessons Summary
+## 10. Common Lessons Summary
 
-### 8.1 Risk Control Principles
+### 10.1 Risk Control Principles
 
 1. **Leverage limits**: Set maximum leverage ceiling
 2. **Diversification**: No over-concentration in single security, strategy, or market
 3. **Liquidity buffer**: Maintain sufficient cash or liquid assets
 4. **Circuit breaker mechanism**: Automatic trading halt trigger conditions
 
-### 8.2 Technical Principles
+### 10.2 Technical Principles
 
 1. **Code review**: All production code must be reviewed
 2. **Canary deployment**: Deploy gradually, not all at once
 3. **Real-time monitoring**: Anomalies must alert immediately
 4. **Rollback capability**: Must be able to rollback within minutes
 
-### 8.3 Cognitive Principles
+### 10.3 Cognitive Principles
 
 1. **Tail risk**: Low-probability events will eventually happen
 2. **Model limitations**: Historical data cannot predict the future
@@ -350,7 +442,7 @@ but politicians' words are not in the training data.
 
 ---
 
-## 9. Risk Control Checklist
+## 11. Risk Control Checklist
 
 Before launching any strategy, ask yourself:
 

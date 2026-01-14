@@ -60,9 +60,10 @@ def should_buy(signal, overnight_risk):
 
 | Board | Price Limit Range |
 |-------|-------------------|
-| Main Board | ±10% |
-| ChiNext | ±20% |
-| STAR Market | ±20% (no limits first 5 days after listing) |
+| Main Board (SSE/SZSE) | ±10% |
+| ChiNext (创业板) | ±20% (since Aug 2020; no limits first 5 days after listing) |
+| STAR Market (科创板) | ±20% (since Jul 2019; no limits first 5 days after listing) |
+| Beijing Stock Exchange (北交所) | ±30% (since Nov 2021) |
 | ST Stocks | ±5% |
 
 ### 3.2 Hong Kong Volatility Control Mechanism (VCM)
