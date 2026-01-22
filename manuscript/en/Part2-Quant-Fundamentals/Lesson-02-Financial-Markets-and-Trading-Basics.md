@@ -356,7 +356,7 @@ Use these checkpoints to confirm you truly understand this lesson:
 ## Extended Reading
 
 - [Background: Exchanges and Order Book Mechanics](Background/Exchanges-and-Order-Book-Mechanics.md) - Deep dive into L1/L2/L3 data differences
-- [Background: HFT and Market Microstructure](Background/HFT-and-Market-Microstructure.md) - Essential reading if you want to compete with HFT
+- [Background: HF Market Microstructure](Background/HF-Market-Microstructure.md) - Essential reading if you want to compete with HFT
 - [Background: Cryptocurrency Trading Characteristics](Background/Cryptocurrency-Trading-Characteristics.md) - Unique challenges of 24/7 markets
 
 ---
