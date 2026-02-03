@@ -48,7 +48,7 @@
 
 ```
 量化 MLOps = Feature Store + Model Registry + Drift Monitor
-             （特征仓库）   （模型注册中心）  （漂移监控）
+             （特征库）      （模型注册表）     （漂移监控）
 
 作用：
 1. Feature Store  → 保证回测和实盘特征一致（可复现性）
